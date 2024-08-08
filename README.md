@@ -1,9 +1,16 @@
 # Background
-This project is a part of my **Big Data Management and Processing** unit. The project is split into two parts: **Part A** (data model designing and building) and **Part B** (real-time streaming and batch processing).
+This project is a part of my [Big Data Management and Processing](https://handbook.monash.edu/2024/units/FIT3182?year=2024) unit. The project is split into two parts:
 
-Part A of the project focuses on designing and building a data model using [MongoDB](https://en.wikipedia.org/wiki/MongoDB), and moving existing climate data from CSV into the database. The reason is that the data being collected is growing in numbers, and a scalable database is needed. Furthermore, complex queries are required for processing and analysis.
+## Part A: Data Model Designing and Building with MongoDB
+- **Scalable Storage and Complex Queries:** Utilize [MongoDB](https://en.wikipedia.org/wiki/MongoDB) to manage growing climate data and perform complex analyses by migrating data from CSV to a scalable NoSQL database.
 
-Part B of the project focuses on real-time streaming and batch processing of the climate data using [Apache Kafka](https://en.wikipedia.org/wiki/Apache_Kafka) and [Apache Spark](https://en.wikipedia.org/wiki/Apache_Spark). The streamed and processed data will be visualised in real-time for monitoring purposes.  
+## Part B: Real-Time Streaming and Batch Processing
+- **Data Ingestion:** Use [Apache Kafka](https://en.wikipedia.org/wiki/Apache_Kafka) to stream climate data every 10 seconds, and AQUA and TERRA satellite data every 2 seconds.
+- **Batch Processing**: Implement [Apache Spark Structured Streaming](https://spark.apache.org/streaming/) to process data in 10-second intervals, integrating and analyzing data from multiple sources.
+- **Geospatial and Event Analysis:** Apply [Geohashing](https://en.wikipedia.org/wiki/Geohash) to correlate climate and hotspot data, determine fire events by averaging satellite data, and classify fires based on air temperature and Global Horizontal Irradiance (GHI).
+- **Real-Time Monitoring:** Visualize processed data in real-time for effective monitoring and decision-making.
+
+<br>
 
 # Architecture
 ![image](https://github.com/user-attachments/assets/df4a21e1-2b69-4d09-9bb1-9bc1229360a3)
