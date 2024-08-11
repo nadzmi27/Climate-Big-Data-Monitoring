@@ -24,3 +24,7 @@ This project is a part of my [Big Data Management and Processing](https://handbo
   - If we receive the data from two different satellites AQUA and TERRA for the same location (to determine whether the two locations are the same or not, we will use Geohash with precision 5), then average the ‘surface temperature’ and ‘confidence’ from the two satellites and save it as a fire event.
   - If a fire was detected with an air temperature greater than 20 (°C) and a GHI greater than 180 (W/m2), then report the cause of the fire event as ‘natural’. Otherwise, report the cause of the fire event as ‘other’.
 
+# TODO:
+- [ ] Fix the docker files
+- [ ] Upload the docker files
+- [ ] Add instructions on how to run the application
